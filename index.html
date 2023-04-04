@@ -1,114 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+<a onclick="show(document.getElementById('side'))">
+  &#9776; Menu
+</a>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>z06by better</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z06by better</title>
+  <link rel="icon" href="images/z06bybetter.png" type="image/x-icon">
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
 </head>
-<body>
-    <nav>
-        <img src="images/z06bybetter.png" alt="logo">
-        <h1></h1>
 
-    <div class="featured">
-        <h1>Popular:</h1>
-        <div class="column">
-          <a href="games/bob-the-robber-2/">
-            <img src="images/bob-the-robber-2.png">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-          </a>
-          <a href="games/roblox/">
-            <img src="images/roblox.jpg">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-          </a>
-        </div>
-        <div class="row">
-          <a href="games/vex6">
-            <img src="images/vex6.jpeg">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-          </a>
-        </div>
-        <div class="row">
-          <a href="games/drive-mad/">
-            <img src="images/drive-mad.jpg">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-            </a>
-        </div>
-        <div class="column">
-          <a href="games/moto-x3m/">
-            <img src="images/moto-x3m.jpg">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-          </a>
-          <a href="games/retro-bowl/">
-            <img src="images/retro-bowl.jpg">
-            <div class="play-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-          </a>
-        </div>
-        </div>
-    </div>
+<head>
+  <center>
+  </center>
+  <div>
+    <center>
+      <h2>
+        Best place for the games <b> <i class="fa-italics">That you love</i></b>
+      </h2>
+      <br>
+      <hr>
+    </center>
+    <center><button onclick="document.getElementById('games').style.display = 'block';document.getElementById('gameLink').scrollIntoView().style.transition = '1s';">Get started</button></center>
+  </div>
 
-    <div class="content">
 
-    <hr>
-
-    <div class="search">
-        <input type="text" placeholder="Search For Games." oninput="">
-        <button><i class="fas fa-search"></i></button>
-    </div>
-
-    <div id="games">
-      <a href="games/bob-the-robber-2/"><img src="images/bob-the-robber-2.png" alt="bob the robber 2"></a>
-      <a href="games/vex7/"><img src="images/vex7.jpeg" alt="vex 7"></a>
-      <a href="games/vex6/"><img src="images/vex6.jpeg" alt="vex 6"></a>
-      <a href="games/"><img src="images/mc.png" alt="minecraft"></a>
-      <a href="games/moto-x3m/"><img src="images/moto-x3m.jpg" alt="moto x3m"></a>
-      <a href="games/retro-bowl/"><img src="images/retro-bowl.jpg" alt="retrobowl"></a>
-      <a href="games/drive-mad/"><img src="images/drive-mad.jpg" alt="drive mad"></a>
-      <a href="games/slope/"><img src="images/slope.jpg" alt="slope"></a>
-      <a href="games/motox3m2/"><img src="images/motox3m2.jpg" alt="moto x3m2"></a>
-      <a href="games/1/"><img src="images/11.png" alt="1"></a>
-      <a href="games/100ng/"><img src="images/100ng.jpg" alt="100ng"></a>
-      <a href="games/2048/"><img src="images/2048.png" alt="2048"></a>
-      <a href="games/vex3/"><img src="images/vex3.jpg" alt="vex3."></a>
-      <a href="games/1v1lol/"><img src="images/1v1lol.png" alt="1v1.lol"></a>
-      <a href="games/slope2/"><img src="images/slope-2-png" alt="slope 2"></a>
-      <a href="games/10 minutes till dawn/"><img src="images/10.png" alt="ten minutes till dawn"></a>
-      <a href="games/flap/"><img src="images/Flappy_Bird_icon.png" alt="flap"></a>
-      <a href="games/Run 2/"><img src="images/run2.jpg" alt="run2"></a>
-      <a href="games/csgo clicker/"><img src="images/csgoclicker.jpeg" alt="csgo clicker"></a>
-      <a href="games/papaspizzaria/"><img src="images/papaspizzaria.jpg" alt="papaspizzaria"></a>
-      <a href="games/among us/"><img src="images/amongus.png" alt="among us"></a>
-      <a href="games/clusterush/"><img src="images/cluster.png" alt="cluster"></a>
-      <a href="games/doodle jump/"><img src="images/doodle.png" alt="doodle jump"></a>
-      <a href="games/ducklife 1/"><img src="images/ducklife.png" alt="ducklife 1"></a>
-      <a href="games/google snake/"><img src="images/snake.png" alt="google snake"></a>
-      <a href="games/backrooms/"><img src="images/backroom.jpg" alt="Backrooms"></a>
-      <a href="games/ducklife2/"><img src="images/ducklife2.png" alt="ducklife2"></a>
-      <a href="games/starve/"><img src="images/starve.png" alt="starve.io"></a>
+  <div id="sidebar" class="sidebar">
+    <p>Helleer there</p>
+  </div>
+  <br>
+  <div id="games">
+   
+   <br>
+    <br>
+    <a id="gameLink" href="games/vex7/"><img src="images/vex7.jpeg" alt="vex 7"></a>
+    <a href="games/vex6/"><img src="images/vex6.jpeg" alt="vex 6"></a>
+    <a href="games/"><img src="images/mc.png" alt="minecraft"></a>
+    <a href="games/moto-x3m/"><img src="images/moto-x3m.jpg" alt="moto x3m"></a>
+    <a href="games/retro-bowl/"><img src="images/retro-bowl.jpg" alt="retrobowl"></a>
+    <a href="games/drive-mad/"><img src="images/drive-mad.jpg" alt="drive mad"></a>
+    <a href="games/slope/"><img src="images/slope.jpg" alt="slope"></a>
+    <a href="games/motox3m2/"><img src="images/motox3m2.jpg" alt="moto x3m2"></a>
+    <a href="games/1/"><img src="images/11.png" alt="1"></a>
+    <a href="games/100ng/"><img src="images/100ng.jpg" alt="100ng"></a>
+    <a href="games/2048/"><img src="images/2048.png" alt="2048"></a>
+    <a href="games/vex3/"><img src="images/vex3.jpg" alt="vex3."></a>
+    <a href="games/1v1lol/"><img src="images/1v1lol.png" alt="1v1.lol"></a>
+    <a href="games/slope2/"><img src="images/slope-2-png" alt="slope 2"></a>
+    <a href="games/10 minutes till dawn/"><img src="images/10.png" alt="ten minutes till dawn"></a>
+    <a  href="games/flap/"><img src="/images/floppy.png" 
+ style="border-radius:30px;" alt="flap"></a>
+    <a href="games/Run 2/"><img src="images/run2.jpg" alt="run2"></a>
+    <a href="games/csgo clicker/"><img src="images/csgoclicker.jpeg" alt="csgo clicker"></a>
+    <a href="games/papaspizzaria/"><img src="images/papaspizzaria.jpg" alt="papaspizzaria"></a>
+    <a href="games/amongus/"><img src="/images/amongus.jpeg"></a>
+    <a href="games/clusterush/"><img src="images/cluster.png" alt="cluster"></a>
+    <a href="games/doodle jump/"><img src="images/download.jpeg" style="border-radius:20px;" alt="doodle jump"></a>
+    <a href="games/ducklife 1"><img src="images/duckylifeone.png" alt="ducklife 1"></a>
+    <a href="games/google snake/"><img src="images/snake.png" alt="google snake"></a>
+    <a href="games/backrooms/"><img src="images/backroom.jpg" alt="Backrooms"></a>
+    <a href="games/ducklife2/"><img src="images/ducklife2.png" alt="ducklife2"></a>
+    <a href="games/starve/"><img src="images/starve.png" alt="starve.io"></a>
 
 
 
-    
-    </div>
-    </div>
-    <script>alert("DM z06by#3917 For More games and bugs!");</script>
-<h2>Credits to 3kh0</h2>
-</html>
 
-<script src="script.js"></script>
+  </div>
+  </div>
+  <script>
+    function show(x) {
+      return x.style.display = "block";
+    }
+    function stop(x) {
+      return x.style.display = "none";
+    }
+
+  </script>
+</head>
