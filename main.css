@@ -1,189 +1,184 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
-
+h1, h2, h3, b, p {
+  font-family: "Montserrat", "Roboto Condensed", sans-serif;
+}
+ h2 {
+   font-size: 34px;
+   color: lightgrey;
+ }
+b {
+  color: black;
+}
 body {
-    background-image:url('https://i.pinimg.com/564x/e7/de/f1/e7def1789158b4f4f4f68b96c95c857a.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: 'Montserrat', sans-serif;
+  background-image: linear-gradient(to right, grey, black)
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    backdrop-filter: blur(10px) saturate(200%) brightness(70%);
-    color: #fff;
-    display: flex;
-    height: 7vw;
-    width: 100%;
-    align-items: center;
-    justify-content: left;
-    padding: 0 1%;
-    z-index: 5;
-    margin: auto;
+#sidebar {
+  display: none;
+  padding:15px;
+  border-radius: 10px;
+  background-color: darkmagenta;
+  width:105px;
+position:fixed;
+  left:0%;
+  top:0%;
+  height:9999999999999999px;
+  border:none;
+  transition: 1s;
+
+}
+#sidebar:hover {
+  
+  width:  175px; 
+}
+#sidebar p {
+  font-size: 25px;
+}
+#sidebar a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+	text-decoration: none;
+	color: #18272F;
+	font-weight: 700;
+  position: relative;
 }
 
-nav img {
-    height: 80%;
-    width: auto;
-    margin-right: 1%;
-    border-radius: 1vw;
-    cursor: pointer;
-    user-select: none;
-    box-shadow: 5px 5px 10px rgba(53, 53, 53, 0.459);
+#sidebar a::before {
+  content: '';
+  background-color: hsla(196, 61%, 58%, .75);
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 8px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
 }
 
-nav h1 {
-    font-size: 4vw;
-    font-weight: 800;
-    margin-right: 1%;
+ #sidebar a:hover::before {
+  bottom: 0;
+  height: 100%;
 }
 
-.content {
-    flex-direction: column;
-    align-items: left;
-    padding: 7vw;
-    padding-top: 0vw;
+#sidebar:focus {
+  width:10%;
+  
 }
 
-.content hr {
-    border: 0;
-    height: 4px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
-    margin: 1vw 0;
+button {
+  padding:10px;
+  width:175px;
+  height:50px;
+  border-radius:5px;
+  border:none;
+  background-color: #34495E;
+  transition-duration:1s;
+  cursor: pointer;
 }
-
-.search {
-    display: flex;
-    user-select: none;
-    margin-top: 2.5vw;
-    margin-left: 1.2vw;
+button:hover {
+  background-color: #212F3D;
+  transform: rotate(5deg);
 }
- 
-.search input {
-    background-color: #222222;
-    border: none;
-    border-radius: 1vw 0 0 1vw;
-    color: #fff;
-    font-size: 1.5vw;
-    font-weight: 600;
-    padding: 0.8vw 1.5vw;
-    font-family: 'Montserrat', sans-serif;
-    z-index: 1;
-    outline: none;
+hr {
+  width:50% to right;
+  border-radius:10px;
+  height:10px;
+  background-color: white;
+  border:none;
 }
- 
-.search input::placeholder {
-    color: #fff;
-    font-weight: 600;
-    font-size: 1.5vw;
-}
- 
-.search button {
-    background-color: #fff;
-    border: none;
-    border-radius: 0 1vw 1vw 0;
-    color:#222222;
-    font-size: 1.5vw;
-    font-weight: 600;
-    padding: 0.8vw 1vw;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    z-index: 1;
-    transition: .3s all ease;
-}
- 
+ a img {
+   width:120px;
+   height:150px;
+   border-radius:10px;
+ }
 #games {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: .6vw;
-    padding-bottom: 5vw;
+  display:none;
+}
+* horizontal threline nav bar */
 
-}
- 
-#games img {    height: 15.6vw;
-    width: 15.6vw;
-    border-radius: 1vw;
-    margin: .5vw;
-    cursor: pointer;
-    user-select: none;
-    transition: transform .2s;
-}
- 
-#games img:hover {
-    transform: scale(1.01);
+.navbar {
+  width: 60px;
+  display: block;
+  margin: 50px auto;
+  border: 4px solid #00bfb6;
+  padding: 8px 10px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+   position:fixed;
+  top:0%;
+  left:0%;
 }
 
-.featured {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 1vw;
-    margin:1%;
-    margin-top: 6vw;
+.navbar div {
+   position:fixed;
+  top:0%;
+  left:0%;
+  height: 5px !important;
+  background: #fff;
+  margin: 7px 0px 7px 0px;
+  border-radius: 25px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 
-.featured h1 {
-    font-size: 3.5vw;
-    font-weight: 700;
-    margin: 1vw 1vw .4vw 1vw;
-    width: 83.8%;
-    text-align: left;
-    color: #fff;
+.two {
+   position:fixed;
+  top:0%;
+  left:0%;
+  width: 35px;
 }
 
-.featured .column {
-    display: flex;
-    flex-direction: column;
+.three {
+   position:fixed;
+  top:0%;
+  left:0%;
+  width: 50px;
 }
 
-.featured img {
-    height: 12.5vw;
-    width: 12.5vw;
-    border-radius: 1vw;
-    margin: .5vw;
-    cursor: pointer;
-    user-select: none;
-    transition: all .2s;
+.navbar:hover div {
+   position:fixed;
+  top:0%;
+  left:0%;
+  width: 60px;
+}
+a {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
-.featured img:hover {
-    transform: scale(1.02);
-    filter: brightness(50%);
+a:before{
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
 }
 
-
-.featured .row img {
-    height: 26vw;
-    width: 26vw;
+a:hover {
+ background-position: 0;
 }
 
-.featured a {
-    display: inline-block;
-    position: relative;
-    color: #2c7ffc;
-    text-decoration: none;
+a:hover::before{
+  width: 100%;
 }
-    
-    .featured .play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.2s;
-    }
-    
-    .featured a:hover .play-button {
-    opacity: 1;
-    pointer-events: none;
-    }
-    
-    .featured .play-button i {
-    font-size: 5vw;
-    text-shadow: 0 0 100px #2c7ffc;
-    }
+#side {
+  display: none;
+}
